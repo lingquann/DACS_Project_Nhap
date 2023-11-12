@@ -168,5 +168,20 @@ namespace QLPhongTro.ChildForm
         {
 
         }
+
+        private void cbbLoaiPhong_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grbContent_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTenPhong_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

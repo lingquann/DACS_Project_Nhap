@@ -105,3 +105,4 @@ D:\demo_test\PTTKPM_N04_Project_10\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.cs
 D:\demo_test\PTTKPM_N04_Project_10\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.exe
 D:\demo_test\PTTKPM_N04_Project_10\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.pdb
 D:\demo_test\PTTKPM_N04_Project_10\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.ChildForm.frmPhongTrong.resources
+D:\demo_test\PTTKPM_N04_Project_10\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.ChildForm.frmDangNhap.resources

@@ -61,12 +61,13 @@
             this.grbContent.Controls.Add(this.cbbLoaiPhong);
             this.grbContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grbContent.Location = new System.Drawing.Point(13, 37);
-            this.grbContent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbContent.Margin = new System.Windows.Forms.Padding(4);
             this.grbContent.Name = "grbContent";
-            this.grbContent.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbContent.Padding = new System.Windows.Forms.Padding(4);
             this.grbContent.Size = new System.Drawing.Size(619, 307);
             this.grbContent.TabIndex = 6;
             this.grbContent.TabStop = false;
+            this.grbContent.Enter += new System.EventHandler(this.grbContent_Enter);
             // 
             // btnHuy
             // 
@@ -74,7 +75,7 @@
             this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy.ForeColor = System.Drawing.Color.White;
             this.btnHuy.Location = new System.Drawing.Point(341, 201);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(128, 28);
             this.btnHuy.TabIndex = 5;
@@ -88,7 +89,7 @@
             this.btnXacNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXacNhan.ForeColor = System.Drawing.Color.White;
             this.btnXacNhan.Location = new System.Drawing.Point(212, 201);
-            this.btnXacNhan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXacNhan.Margin = new System.Windows.Forms.Padding(4);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(128, 28);
             this.btnXacNhan.TabIndex = 4;
@@ -102,7 +103,7 @@
             this.ckbHoatDong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckbHoatDong.ForeColor = System.Drawing.Color.Black;
             this.ckbHoatDong.Location = new System.Drawing.Point(212, 146);
-            this.ckbHoatDong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckbHoatDong.Margin = new System.Windows.Forms.Padding(4);
             this.ckbHoatDong.Name = "ckbHoatDong";
             this.ckbHoatDong.Size = new System.Drawing.Size(96, 21);
             this.ckbHoatDong.TabIndex = 3;
@@ -113,10 +114,11 @@
             // 
             this.txtTenPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenPhong.Location = new System.Drawing.Point(212, 114);
-            this.txtTenPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenPhong.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenPhong.Name = "txtTenPhong";
             this.txtTenPhong.Size = new System.Drawing.Size(333, 23);
             this.txtTenPhong.TabIndex = 2;
+            this.txtTenPhong.TextChanged += new System.EventHandler(this.txtTenPhong_TextChanged);
             // 
             // label3
             // 
@@ -159,16 +161,17 @@
             this.cbbLoaiPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbLoaiPhong.FormattingEnabled = true;
             this.cbbLoaiPhong.Location = new System.Drawing.Point(212, 80);
-            this.cbbLoaiPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbLoaiPhong.Margin = new System.Windows.Forms.Padding(4);
             this.cbbLoaiPhong.Name = "cbbLoaiPhong";
             this.cbbLoaiPhong.Size = new System.Drawing.Size(333, 25);
             this.cbbLoaiPhong.TabIndex = 0;
+            this.cbbLoaiPhong.SelectedIndexChanged += new System.EventHandler(this.cbbLoaiPhong_SelectedIndexChanged);
             // 
             // pnlRight
             // 
             this.pnlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlRight.Location = new System.Drawing.Point(632, 37);
-            this.pnlRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlRight.Margin = new System.Windows.Forms.Padding(4);
             this.pnlRight.Name = "pnlRight";
             this.pnlRight.Size = new System.Drawing.Size(13, 307);
             this.pnlRight.TabIndex = 2;
@@ -177,7 +180,7 @@
             // 
             this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeft.Location = new System.Drawing.Point(0, 37);
-            this.pnlLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlLeft.Margin = new System.Windows.Forms.Padding(4);
             this.pnlLeft.Name = "pnlLeft";
             this.pnlLeft.Size = new System.Drawing.Size(13, 307);
             this.pnlLeft.TabIndex = 3;
@@ -188,7 +191,7 @@
             this.pnlTop.Controls.Add(this.ptbExit);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
-            this.pnlTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlTop.Margin = new System.Windows.Forms.Padding(4);
             this.pnlTop.Name = "pnlTop";
             this.pnlTop.Size = new System.Drawing.Size(645, 37);
             this.pnlTop.TabIndex = 4;
@@ -212,7 +215,7 @@
             this.ptbExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbExit.Image = global::QLPhongTro.Properties.Resources.close;
             this.ptbExit.Location = new System.Drawing.Point(603, 9);
-            this.ptbExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbExit.Margin = new System.Windows.Forms.Padding(4);
             this.ptbExit.Name = "ptbExit";
             this.ptbExit.Size = new System.Drawing.Size(27, 25);
             this.ptbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -224,7 +227,7 @@
             // 
             this.pblBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pblBottom.Location = new System.Drawing.Point(0, 344);
-            this.pblBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pblBottom.Margin = new System.Windows.Forms.Padding(4);
             this.pblBottom.Name = "pblBottom";
             this.pblBottom.Size = new System.Drawing.Size(645, 12);
             this.pblBottom.TabIndex = 5;
@@ -241,7 +244,7 @@
             this.Controls.Add(this.pnlTop);
             this.Controls.Add(this.pblBottom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmXuLyPhong";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

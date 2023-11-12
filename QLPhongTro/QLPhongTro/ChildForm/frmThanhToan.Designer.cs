@@ -34,7 +34,6 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.pnlTop = new System.Windows.Forms.Panel();
-            this.ptbExit = new System.Windows.Forms.PictureBox();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnThanhToanGiaHan = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -60,13 +59,17 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pnlRight = new System.Windows.Forms.Panel();
+            this.ptbExit = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).BeginInit();
             this.grbContent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pblBottom
             // 
+            this.pblBottom.BackColor = System.Drawing.Color.White;
             this.pblBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pblBottom.Location = new System.Drawing.Point(13, 464);
             this.pblBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -103,8 +106,8 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(62, 14);
+            this.lblTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblTitle.Location = new System.Drawing.Point(63, 16);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(140, 17);
@@ -113,6 +116,7 @@
             // 
             // pnlLeft
             // 
+            this.pnlLeft.BackColor = System.Drawing.Color.White;
             this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeft.Location = new System.Drawing.Point(0, 37);
             this.pnlLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -122,6 +126,8 @@
             // 
             // pnlTop
             // 
+            this.pnlTop.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlTop.Controls.Add(this.pictureBox1);
             this.pnlTop.Controls.Add(this.lblTitle);
             this.pnlTop.Controls.Add(this.ptbExit);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -130,20 +136,6 @@
             this.pnlTop.Name = "pnlTop";
             this.pnlTop.Size = new System.Drawing.Size(945, 37);
             this.pnlTop.TabIndex = 14;
-            // 
-            // ptbExit
-            // 
-            this.ptbExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ptbExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ptbExit.Image = global::QLPhongTro.Properties.Resources.close;
-            this.ptbExit.Location = new System.Drawing.Point(902, 9);
-            this.ptbExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ptbExit.Name = "ptbExit";
-            this.ptbExit.Size = new System.Drawing.Size(27, 25);
-            this.ptbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbExit.TabIndex = 0;
-            this.ptbExit.TabStop = false;
-            this.ptbExit.Click += new System.EventHandler(this.ptbExit_Click);
             // 
             // btnHuy
             // 
@@ -466,12 +458,37 @@
             // 
             // pnlRight
             // 
+            this.pnlRight.BackColor = System.Drawing.Color.White;
             this.pnlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlRight.Location = new System.Drawing.Point(945, 0);
             this.pnlRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlRight.Name = "pnlRight";
             this.pnlRight.Size = new System.Drawing.Size(13, 476);
             this.pnlRight.TabIndex = 12;
+            // 
+            // ptbExit
+            // 
+            this.ptbExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ptbExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptbExit.Image = global::QLPhongTro.Properties.Resources.close;
+            this.ptbExit.Location = new System.Drawing.Point(902, 9);
+            this.ptbExit.Margin = new System.Windows.Forms.Padding(4);
+            this.ptbExit.Name = "ptbExit";
+            this.ptbExit.Size = new System.Drawing.Size(27, 25);
+            this.ptbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbExit.TabIndex = 0;
+            this.ptbExit.TabStop = false;
+            this.ptbExit.Click += new System.EventHandler(this.ptbExit_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::QLPhongTro.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(43, 26);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // frmThanhToan
             // 
@@ -493,9 +510,10 @@
             this.Load += new System.EventHandler(this.frmThanhToan_Load);
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).EndInit();
             this.grbContent.ResumeLayout(false);
             this.grbContent.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -534,5 +552,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnThanhToanTraPhong;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

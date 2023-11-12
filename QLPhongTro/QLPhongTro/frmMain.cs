@@ -86,6 +86,7 @@ namespace QLPhongTro
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            
             var f = new frmWelcome();
             AddForm(f);
 
@@ -124,6 +125,20 @@ namespace QLPhongTro
         {
             var f = new frmWelcome();
             AddForm(f);
+        }
+
+        private void pnlTop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void thoátToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn thoát không", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                this.Hide();
+                new frmDangNhap().ShowDialog();
+            }
         }
     }
 }
