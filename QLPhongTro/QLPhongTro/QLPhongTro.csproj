@@ -77,6 +77,12 @@
     <Compile Include="ChildForm\frmPhong.Designer.cs">
       <DependentUpon>frmPhong.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChildForm\frmPhongTrong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\frmPhongTrong.Designer.cs">
+      <DependentUpon>frmPhongTrong.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChildForm\frmThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     <EmbeddedResource Include="ChildForm\frmPhong.resx">
       <DependentUpon>frmPhong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\frmPhongTrong.resx">
+      <DependentUpon>frmPhongTrong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForm\frmThanhToan.resx">
       <DependentUpon>frmThanhToan.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,10 +195,8 @@
     <None Include="Resources\res.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logo1.png" />
+    <Content Include="Resources\logo1.png" />
+    <Content Include="Resources\logoicon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

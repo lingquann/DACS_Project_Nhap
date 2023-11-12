@@ -114,5 +114,16 @@ namespace QLPhongTro
             var f = new frmThuePhong();
             AddForm(f);
         }
+
+        private void grbContent_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void trangChủToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new frmWelcome();
+            AddForm(f);
+        }
     }
 }

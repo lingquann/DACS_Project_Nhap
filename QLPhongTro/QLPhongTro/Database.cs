@@ -11,7 +11,7 @@ namespace QLPhongTro
 {
    public class Database
     {
-        private string connetionString = @"Data Source=DESKTOP-6VK8095\SQLEXPRESS;Initial Catalog=QLPhongTro;Integrated Security=True";
+        private string connetionString = @"Data Source=DESKTOP-GMV34D3\SQLEXPRESS;Initial Catalog=QLPhongTro;Integrated Security=True";
         private SqlConnection conn;
         private DataTable dt;
         private SqlCommand cmd;
